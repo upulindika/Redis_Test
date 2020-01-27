@@ -1,0 +1,5 @@
+---
+spring.profile: cloud
+spring:
+  application:
+    name: redis_test

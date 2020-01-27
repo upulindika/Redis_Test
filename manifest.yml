@@ -1,0 +1,13 @@
+---
+applications:
+- name: redis_test
+  instances: 1
+  path: target/
+  buildpacks:
+    - java_buildpack_offline
+  timeout: 60
+  health-check-type: port
+  memory: 768M
+  services:
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
